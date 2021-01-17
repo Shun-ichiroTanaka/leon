@@ -1,0 +1,31 @@
+.l-header {
+  height: 100px;
+  background: #fff;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.5);
+  z-index: 5000;
+
+  &-createBtn {
+    // box-shadow: 0 10px 20px -10px rgba($primary,.6);
+    transition: .2s ease !important;
+    &:hover {
+      transition: .2s ease !important;
+      transform: translateY(-3px) !important;
+    }
+  }
+
+  &-home {
+    height: 70px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  &-create {
+      height: 50px;
+      padding: 10px;
+      margin: 10px;
+      border-bottom: 1px solid $white;
+  }
+}

@@ -1,0 +1,43 @@
+
+// 背景
+.btn-up {
+    @apply py-3 px-4 text-center;
+    border-radius: 14px;
+    min-width: 80px;
+    transition: .2s ease;
+    &:hover {
+      transition: .2s ease;
+      transform: translateY(-3px);
+    }
+}
+
+.leon-up {
+    transition: .2s ease;
+    &:hover {
+      transition: .2s ease;
+      transform: translateY(-3px);
+    }
+}
+
+
+
+.rounded-leon {
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+.primary-shadow {
+    &:hover {
+        box-shadow: 0 4px 20px 0 rgba($primary,.5);
+    }
+}
+.dark-shadow {
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.3);
+}
+
+.f-sticky {
+    @apply flex flex-col h-full overflow-y-scroll sticky;
+}

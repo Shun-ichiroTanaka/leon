@@ -1,0 +1,93 @@
+
+.u-article {
+    &-show {
+    }
+    &-wrapper {
+        height: calc(100vh - 70px);
+        form {
+            width: 95%;
+            padding: 20px 0;
+        }
+    }
+    &-main {
+        margin-right: 2rem;
+        background: $dark;
+        border-radius: 6px;
+        padding: 2rem;
+        max-width: 960px;
+    }
+    &-leftside {
+        min-width: 120px;
+        max-width: 120px;
+        left: 2rem;
+        min-height: 400px;
+        max-height: calc(100vh - 100px - 2rem);
+    }
+    &-right {
+        padding-right: 2rem;
+        font-weight: 700;
+        width: 120px;
+    }
+    &-title {
+        font-size: 40px;
+    }
+
+    // 投稿画面
+    &-create {
+        &-title {
+            height: 50px;
+            border: none;
+            line-height: 50px;
+        }
+        &-postbtn {
+            width: 150px;
+            max-width: 150px;
+        }
+    }
+    &-home {
+        @apply flex w-full mx-auto;
+        max-width: 90rem;
+        &-leftside {
+            @apply flex flex-col top-0 h-full overflow-y-scroll sticky;
+            background: $dark;
+            width: 200px;
+            max-height: 100vh !important;
+                // box-shadow: 0 4px 20px 0 rgba(0,0,0,.3);
+
+            ul {
+                li {
+                    transition: .2s ease;
+                    -webkit-transition: .2s ease;
+                    -moz-transition: .2s ease;
+                    -ms-transition: .2s ease;
+                    -o-transition: .2s ease;
+                    &:hover {
+                        transition: .2s ease;
+                        transform: translateX(5px);
+                        -webkit-transform: translateX(5px);
+                        -moz-transform: translateX(5px);
+                        -ms-transform: translateX(5px);
+                        -o-transform: translateX(5px);
+}
+}
+            }
+        }
+        &-sumbnail {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    &-hero {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+    &-list {
+        @apply inline-flex w-full justify-center;
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
